@@ -160,13 +160,12 @@
             position: fixed;
             width: clamp(25px, 3vw, 40px);
             height: clamp(25px, 3vw, 40px);
-            background: radial-gradient(circle at 30% 30%, #FFF8E7, #F5E6C8);
+            background: url('makhana.png') no-repeat center center;
+            background-size: contain;
             border-radius: 50%;
             opacity: 0;
             z-index: 3;
-            box-shadow: 
-                inset 2px 2px 4px rgba(139, 69, 19, 0.1),
-                1px 1px 3px rgba(139, 69, 19, 0.15);
+            filter: drop-shadow(1px 1px 3px rgba(139, 69, 19, 0.15));
             animation: popIn 0.5s ease-out forwards, gentleBounce 4s ease-in-out infinite;
             pointer-events: none;
         }
