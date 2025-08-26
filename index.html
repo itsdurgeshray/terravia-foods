@@ -272,7 +272,7 @@
             <p class="tagline">
                 Hand-harvested from the clean waters of Mithila, our makhana brings purest nourishment to your bowl.
             </p>
-            <button class="cta-button">shop now</button>
+            <button class="cta-button" onclick="window.location.href='https://api.whatsapp.com/send/?phone=917005713828&text&type=phone_number&app_absent=0'">shop now</button>
         </div>
 
         <div class="bowl-container">
@@ -428,13 +428,13 @@
             
             // Device-specific adjustments
             if (window.innerWidth < 480) {
-                kernelCount = Math.max(Math.min(kernelCount, 8), 4); // 4-8 kernels on small mobile
+                kernelCount = Math.max(Math.min(kernelCount, 14), 10); // 4-8 kernels on small mobile
             } else if (window.innerWidth < 768) {
-                kernelCount = Math.max(Math.min(kernelCount, 12), 6); // 6-12 kernels on tablets
+                kernelCount = Math.max(Math.min(kernelCount, 20), 14); // 6-12 kernels on tablets
             } else if (window.innerWidth < 1200) {
-                kernelCount = Math.max(Math.min(kernelCount, 18), 8); // 8-18 kernels on small desktop
+                kernelCount = Math.max(Math.min(kernelCount, 28), 14); // 8-18 kernels on small desktop
             } else {
-                kernelCount = Math.max(Math.min(kernelCount, 25), 10); // 10-25 kernels on large screens
+                kernelCount = Math.max(Math.min(kernelCount, 36), 28); // 10-25 kernels on large screens
             }
             
             // Adjust for portrait vs landscape
